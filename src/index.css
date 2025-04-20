@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #111;
+  
+}
+img {
+  max-width: 100%;
+}
+.weather-card {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  padding: 35px 30px;
+  margin: 30px auto 0;
+  border-radius: 20px;
+  color: black;
+  background: linear-gradient(120deg, #fff767, #a2d5e6);
+}
+.weather-card .search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.weather-card .search input {
+  width: 80%; 
+  height: 50px;
+  font-size: 18px;
+  flex: 1;
+  color: #555;
+  padding: 10px 25px;
+  outline: none;
+  background: #ebfffc;
+  border: none;
+  border-radius: 30px;
+}
+
+.weather-card .search button {
+  height: 50px;
+  padding: 0 20px; 
+  margin-left: 10px; 
+  border: none;
+  border-radius: 30px; 
+  background-color: #86b1e0;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.weather-card .search button:hover {
+  background-color: #489df8;
+}
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: -30px;
+  color: black;
+}
+.weather h2 {
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -25px;
+  color: black;
+}
+.weather .weather-icon {
+  width: 60%;
+  height: 200px;
+  padding: 10px;
+  color: #111;
+}
+.details {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.details .humi {
+  filter: brightness(0) saturate(100%);
+}
+.details img {
+  width: 40px;
+  height: 40px;
+  color: black;
+  filter: brightness(0) saturate(100%);
+}
+.details .info {
+  margin-left: 10px;
+}
+.details .humidity,
+.wind {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+.col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  margin-top: -20px;
+}
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.default-animation {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  animation: bounce 2s infinite;
+}
+
+.icon-container img {
+  width: 80px;
+  height: 80px;
+}
+
+.animation-text {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
